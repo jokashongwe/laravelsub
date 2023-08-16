@@ -12,4 +12,9 @@ class Website extends Model
         'name',
         'url'
     ];
+    
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class);
+    }
 }
